@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>{% block tittle %}Blog Personal en Flask{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Inicio</a>
+        </nav>
+    </header>
+    <main>
+        {% block main %}
+        <h1>Bienvenido a mi blog personal</h1>
+        <p>Este es un blog creado con Flask, donde comparto mis pensamientos y proyectos.</p>
+        {% endblock %}
+    </main>
+    <footer>
+        {% block footer %}
+        <nav>
+            <a href="/about">Acerca de nosotros</a> |
+            <a href="/contact">Contacto</a>
+            <p>&copy; 2023 Mi Blog Personal</p>
+        </nav>
+        {% endblock %}
+    </footer>
+</body>
+
+</html>
