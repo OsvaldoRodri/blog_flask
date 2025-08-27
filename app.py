@@ -13,6 +13,14 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/projects")
+def projects():
+    """
+    Renderiza la página principal usando la plantilla index.html.
+    """
+    return render_template("projects.html")
+
+
 @app.route("/about")
 def about():
     """
