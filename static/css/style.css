@@ -2,22 +2,88 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f1f1ca;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f5f5f5;
+    color: #705d0a;
+    height: 100%;
+    /* ocupa toda la ventana */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    /* fondo suave */
 }
 
 header {
-    background-color: #cfcf81;
+    background-color: #FFD60A;
+    /* amarillo pato */
+    height: 50px;
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
-    /* Alinea el contenido a la derecha */
-    border-bottom: 1px solid #d8d8c5;
+    font-size: 15px;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #FFD60A 90%, #ffffff 100%);
 
+    /* azul petróleo */
+    align-items: center;
+    display: flex;
 }
 
 header nav a {
+    transition: 0.2s;
     margin-left: 10px;
     text-decoration: none;
-    color: rgb(99, 99, 40);
+    color: #705d0a;
+    /* gris oscuro */
+}
+
+.navbar a:hover {
+    color: #ffbb00;
+    /* naranja del pico */
+    font-size: 18px;
+    filter: drop-shadow(0 0 6px #003566);
+    text-shadow: 0 0 4px #003566;
+    /* glow azul */
+}
+
+.navbar a:hover .icon {
+    filter: drop-shadow(0 0 8px #003566);
+    /* brillo en hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.container {
+    grid-column: 2;
+    /* Ocupa la columna central (3fr) */
+}
+
+.pato-coder {
+    display: flex;
+    color: #003566;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #FFD60A;
+    /* amarillo pato */
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #FFD60A 90%, #ffffff 100%);
 }
