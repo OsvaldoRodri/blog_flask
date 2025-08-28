@@ -1,1 +1,1 @@
-alert('Hola, bienvenido a mi blog!');
+console.log("Js is working well!");
